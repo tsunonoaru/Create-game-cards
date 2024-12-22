@@ -50,10 +50,9 @@ if __name__ == '__main__':
             skill = skill.replace(old, new)
         runic_skills.append(skill)
 
-    selected_skills = random.sample(runic_skills, 3)
-
-    
+   
     for i in range(1, 11):
+        selected_skills = random.sample(runic_skills, 3)
         context = {
             "first_name": fake.first_name(),
             "last_name": fake.last_name(),
